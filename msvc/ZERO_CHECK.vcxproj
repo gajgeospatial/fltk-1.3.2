@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{16305904-6A67-4A23-B82F-19FB968F186F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;..\jpeg;..\zlib;..\png;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\;..\jpeg;..\zlib;..\png;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\401819abd429f7a14c019d77dedbe69c\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/fltk-1.3.2 -BD:/Development/op3d_active/fltk-1.3.2/msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindX11.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestBigEndian.cmake;D:\Development\op3d_active\fltk-1.3.2\CMake\FLTKConfig.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\UseFLTK.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\cmake_uninstall.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\configh.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fltk-config.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fluid\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\jpeg\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeRCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeSystem.cmake;D:\Development\op3d_active\fltk-1.3.2\png\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\src\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\test\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\jpeg\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\zlib\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\png\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\fluid\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\src\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\test\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/fltk-1.3.2 -BD:/Development/op3d_active/fltk-1.3.2/msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindX11.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestBigEndian.cmake;D:\Development\op3d_active\fltk-1.3.2\CMake\FLTKConfig.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\UseFLTK.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\cmake_uninstall.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\configh.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fltk-config.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fluid\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\jpeg\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeRCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeSystem.cmake;D:\Development\op3d_active\fltk-1.3.2\png\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\src\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\test\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\jpeg\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\zlib\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\png\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\fluid\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\src\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\test\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/fltk-1.3.2 -BD:/Development/op3d_active/fltk-1.3.2/msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindX11.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestBigEndian.cmake;D:\Development\op3d_active\fltk-1.3.2\CMake\FLTKConfig.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\UseFLTK.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\cmake_uninstall.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\configh.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fltk-config.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fluid\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\jpeg\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeRCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeSystem.cmake;D:\Development\op3d_active\fltk-1.3.2\png\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\src\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\test\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\jpeg\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\zlib\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\png\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\fluid\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\src\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\test\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/fltk-1.3.2 -BD:/Development/op3d_active/fltk-1.3.2/msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/generate.stamp.rule;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FLTKCompatibility.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindX11.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\TestBigEndian.cmake;D:\Development\op3d_active\fltk-1.3.2\CMake\FLTKConfig.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\UseFLTK.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMake\cmake_uninstall.cmake.in;D:\Development\op3d_active\fltk-1.3.2\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\configh.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fltk-config.cmake.in;D:\Development\op3d_active\fltk-1.3.2\fluid\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\jpeg\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeCXXPlatform.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeRCCompiler.cmake;D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\CMakeSystem.cmake;D:\Development\op3d_active\fltk-1.3.2\png\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\src\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\test\CMakeLists.txt;D:\Development\op3d_active\fltk-1.3.2\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\jpeg\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\zlib\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\png\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\fluid\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\src\CMakeFiles\generate.stamp;D:\Development\op3d_active\fltk-1.3.2\msvc\test\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\401819abd429f7a14c019d77dedbe69c\ZERO_CHECK.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\ZERO_CHECK</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/fltk-1.3.2/msvc/CMakeFiles/401819abd429f7a14c019d77dedbe69c/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\fltk-1.3.2\msvc\CMakeFiles\ZERO_CHECK</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ZERO_CHECK" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
